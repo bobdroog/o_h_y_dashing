@@ -6,8 +6,8 @@ Instagram.configure do |config|
 end
  
 # Latitude, Longitude for location
-instadash_location_lat = '45.429522'
-instadash_location_long = '-75.689613'
+instadash_location_lat = '39.746567'
+instadash_location_long = '-104.99393'
  
 SCHEDULER.every '10m', :first_in => 0 do |job|
   photos = Instagram.media_search(instadash_location_lat,instadash_location_long)
